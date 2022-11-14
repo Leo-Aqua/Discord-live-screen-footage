@@ -15,7 +15,7 @@ client = discord.Client(intents=intents)
 async def on_message(message):
 
 
-    if message.content.startswith('!'):
+    if message.content.startswith('!start'):
        
         message = await message.channel.send('Live') 
         while True:
